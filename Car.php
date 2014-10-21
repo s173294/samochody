@@ -26,11 +26,13 @@ class Car{
 	}
 	
 	public function getVMax(){
-		return $this->vMax;
+		$czas = 100 //przyspieszenie w ciagu 100 s.
+		return $acceleration * 100; 
 	}
 	
 	public function getAcceleration(){
-		return $this->acceleration;
+		$czas = 100; //przyspieszenie w ciagu 100 s.
+		return $vMax/100;
 	}
 	
 	public function getHP(){
