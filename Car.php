@@ -15,6 +15,10 @@ class Car{
 	public function helloCar(){
 		echo "Jestem autem";
 	}
+	
+	public function __construct($silnik){
+		$this->silnik = $silnik;
+	}
 
 	public function setModel($model){
 		$this->model = $model;
@@ -24,7 +28,16 @@ class Car{
 	public function getModel(){
 		return $this->model;
 	}
-	
+	/*
+	public function setSilnik($silnik){
+		$this->silnik = $silnik;
+		return $this;
+	}
+	*/
+	public function getSilnik(){
+		return $this->silnik;
+	}
+	/*
 	public function getVMax(){
 		$czas = 100 //przyspieszenie w ciagu 100 s.
 		return $acceleration * 100; 
@@ -34,8 +47,25 @@ class Car{
 		$czas = 100; //przyspieszenie w ciagu 100 s.
 		return $vMax/100;
 	}
-	
+	*/
 	public function getHP(){
 		return $this->HP;
 	}
+}
+
+class NewEngine{
+	private $nowySilnik;
+	/*
+	public function zmienSilnik($nowySilnik){
+		$this->nowySilnik = $nowySilnik;
+	}*/
+	/*
+	public function __construct(Car $nowySilnik){
+		$this->nowySilnik = $nowySilnik;
+	}
+	*/
+	public function __construct($nowySilnik){
+		$this->nowySilnik = $nowySilnik;
+	}
+
 }

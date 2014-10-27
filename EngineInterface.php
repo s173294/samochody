@@ -2,6 +2,6 @@
 
 include_once('Car.php');
 
-nterface EngineInterface{
+interface EngineInterface{
     public function getHP();
 }
