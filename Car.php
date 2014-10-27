@@ -28,12 +28,12 @@ class Car{
 	public function getModel(){
 		return $this->model;
 	}
-	/*
+	
 	public function setSilnik($silnik){
 		$this->silnik = $silnik;
 		return $this;
 	}
-	*/
+	
 	public function getSilnik(){
 		return $this->silnik;
 	}
@@ -55,17 +55,17 @@ class Car{
 
 class NewEngine{
 	private $nowySilnik;
-	/*
+	
 	public function zmienSilnik($nowySilnik){
 		$this->nowySilnik = $nowySilnik;
-	}*/
+	}
 	/*
 	public function __construct(Car $nowySilnik){
 		$this->nowySilnik = $nowySilnik;
 	}
-	*/
+	
 	public function __construct($nowySilnik){
 		$this->nowySilnik = $nowySilnik;
 	}
-
+	*/
 }
